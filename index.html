@@ -35,6 +35,90 @@ function generateFormula() {
         "🧪 建議配方：" + formula + "\n\n" +
         "💡 專業建議：" + tone;
 }
+const colorDB = [
+  { code: "22/0", level: 22, tone: "natural", coverGrey: false },
+  { code: "33/0", level: 33, tone: "natural", coverGrey: false },
+  { code: "44/0", level: 44, tone: "natural", coverGrey: false },
+  { code: "55/0", level: 55, tone: "natural", coverGrey: false },
+  { code: "66/0", level: 66, tone: "natural", coverGrey: false },
+  { code: "77/0", level: 77, tone: "natural", coverGrey: false },
+  { code: "88/0", level: 88, tone: "natural", coverGrey: false },
+  { code: "99/0", level: 99, tone: "natural", coverGrey: false },
+
+  { code: "0/00", level: 0, tone: "clear", coverGrey: false },
+
+  // Ash 系
+  { code: "6/11", tone: "ash" },
+  { code: "8/11", tone: "ash" },
+  { code: "0/11", tone: "ash" },
+
+  { code: "6/2", tone: "violet" },
+  { code: "8/2", tone: "violet" },
+  { code: "0/22", tone: "violet" },
+
+  // Gold / beige
+  { code: "5/3", tone: "gold" },
+  { code: "6/3", tone: "gold" },
+  { code: "7/3", tone: "gold" },
+  { code: "8/3", tone: "gold" },
+
+  { code: "5/33", tone: "intense gold" },
+  { code: "6/33", tone: "intense gold" },
+  { code: "7/33", tone: "intense gold" },
+  { code: "8/33", tone: "intense gold" },
+  { code: "9/33", tone: "intense gold" },
+  { code: "0/33", tone: "intense gold" },
+
+  // Copper / red系
+  { code: "5/4", tone: "copper" },
+  { code: "6/4", tone: "copper" },
+  { code: "7/4", tone: "copper" },
+
+  { code: "5/43", tone: "copper gold" },
+  { code: "6/43", tone: "copper gold" },
+  { code: "7/43", tone: "copper gold" },
+  { code: "8/43", tone: "copper gold" },
+  { code: "0/43", tone: "copper gold" },
+
+  { code: "4/45", tone: "red copper" },
+  { code: "5/45", tone: "red copper" },
+  { code: "6/45", tone: "red copper" },
+  { code: "7/45", tone: "red copper" },
+  { code: "8/45", tone: "red copper" },
+  { code: "0/45", tone: "red copper" },
+
+  { code: "4/5", tone: "mahogany" },
+  { code: "6/5", tone: "mahogany" },
+
+  { code: "4/64", tone: "red violet" },
+  { code: "5/64", tone: "red violet" },
+
+  { code: "3/66", tone: "intense red" },
+  { code: "5/66", tone: "intense red" },
+  { code: "0/66", tone: "intense red" },
+
+  { code: "5/75", tone: "brown mahogany" },
+  { code: "7/75", tone: "brown mahogany" },
+
+  { code: "4/77", tone: "intense brown red", greyCover: true },
+  { code: "C5/77", tone: "grey cover red", greyCover: true },
+  { code: "C6/77", tone: "grey cover red", greyCover: true },
+
+  { code: "2/8", tone: "blue ash" },
+  { code: "0/88", tone: "intense blue ash" },
+
+  // special fashion tones
+  { code: "8/15", tone: "ash beige" },
+  { code: "8/16", tone: "ash violet" },
+  { code: "8/17", tone: "ash green" },
+  { code: "8/18", tone: "ash blue" },
+  { code: "9/10", tone: "light ash" },
+  { code: "9/20", tone: "light violet" },
+  { code: "10/51", tone: "light red violet" },
+  { code: "10/75", tone: "light mahogany" },
+  { code: "10/82", tone: "light ash violet" }
+];
+        
 </script>
 
 <body>
