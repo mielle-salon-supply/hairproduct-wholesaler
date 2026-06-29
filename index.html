@@ -14,6 +14,26 @@
     <h1>歡迎來到 Mielle Salon Supply</h1>
     <p>Hair Product Wholesaler</p>
 
+    <div class="ai-box">
+
+    <h2>AI 染髮配方生成器</h2>
+
+    <p>輸入想要的髮色，我幫你生成專業配方</p>
+
+    <input id="colorInput" placeholder="例如：奶茶棕 / 霧感灰 / 冷亞麻">
+
+    <select id="hairCondition">
+        <option value="normal">健康髮</option>
+        <option value="damaged">受損髮</option>
+        <option value="bleached">漂過髮</option>
+    </select>
+
+    <button onclick="generateFormula()">生成配方</button>
+
+    <div id="result"></div>
+
+</div>
+
     <!-- Product 1 -->
     <div class="card">
         <img src="images/jewelry.png" width="300">
