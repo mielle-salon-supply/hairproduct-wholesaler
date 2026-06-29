@@ -96,5 +96,42 @@ function generateFormula() {
 
 </div>
 
+    ...
+    <p>網站建置中，敬請期待。</p>
+
+</div>
+
+<script>
+function generateFormula() {
+
+    let color = document.getElementById("colorInput").value;
+    let condition = document.getElementById("hairCondition").value;
+
+    let formula = "";
+    let tone = "";
+
+    if (condition === "bleached") {
+        formula = "染膏 + 護色劑 + 低雙氧 3%";
+        tone = "已漂髮建議使用低刺激配方，避免過度受損";
+    } 
+    else if (condition === "damaged") {
+        formula = "染膏 + 修護添加劑 + 6%雙氧";
+        tone = "受損髮建議加入修護成分，提升光澤與彈性";
+    } 
+    else {
+        formula = "標準染膏 + 6%雙氧";
+        tone = "健康髮可正常上色，效果穩定";
+    }
+
+    document.getElementById("result").innerHTML =
+        "🎨 目標髮色：" + color + "<br><br>" +
+        "🧪 建議配方：" + formula + "<br><br>" +
+        "💡 專業建議：" + tone;
+}
+</script>
+
+</body>
+</html>
+
 </body>
 </html>
