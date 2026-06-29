@@ -78,3 +78,21 @@ img {
     padding: 15px;
     border-radius: 8px;
 }
+
+.palette {
+    margin: 20px 0;
+}
+
+.palette button {
+    margin: 5px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #2c3e50;
+    color: white;
+}
+
+.palette button:hover {
+    background: #1a1a1a;
+}
